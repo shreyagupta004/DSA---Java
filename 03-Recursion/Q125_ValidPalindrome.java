@@ -1,6 +1,6 @@
-public class Q_125_ValidPalindrome{
+public class Q125_ValidPalindrome{
     public static void main(String args[]){
-        String s = "race a car";
+        String s = "A man, a plan, a canal: Panama";
         s = s.replaceAll("[^a-zA-Z0-9]" ,"").toLowerCase();
         System.out.println(ispalindrome(0, s.length() - 1, s));
     }
