@@ -1,0 +1,15 @@
+public class factorialOfN {
+    public static void main(String[] args) {
+        System.out.println(factorialOfN(5));
+    }
+    public static int factorialOfN(int n){
+
+        if(n == 1){
+            return 1;
+        }
+        if(n == 0){
+            return 0;
+        }
+        return n * factorialOfN(n - 1);
+    }
+}

@@ -18,7 +18,7 @@ public class GCDOrHCF {
         
 
     }
-
+    //EUCLIDEAN ALGORITHM-----
     public static void gcd(int a , int b){
 
         while(a > 0 && b > 0){
@@ -38,3 +38,4 @@ public class GCDOrHCF {
         }
     }
 }
+ 
