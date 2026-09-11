@@ -3,7 +3,7 @@ public class GCDOrHCF {
 
         gcdOrhcf(12 , 24);
 
-        gcd(52, 10);
+        gcd(2, 10);
         
     }
     public static void gcdOrhcf(int n1 , int n2){
