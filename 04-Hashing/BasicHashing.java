@@ -30,7 +30,6 @@ public class BasicHashing{
             System.out.println(hash[num]);
         }
 
-
             //Character Hashing-----
 
             System.out.print("enter the String:");
