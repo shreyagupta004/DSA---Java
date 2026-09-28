@@ -1,5 +1,3 @@
-
-
 public class BruteForceSolution {
     public static void main(String[] args) {
         int arr[] = {2,3,78,7,3,6,99};
