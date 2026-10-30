@@ -1,3 +1,4 @@
+import java.util.*;
 public class BruteForceSolution{
     public static void main(String[] args) {
         int arr1[] = {1,3,5,7};
@@ -10,28 +11,28 @@ public class BruteForceSolution{
         int right = 0;
         while(left <= n && right <= m){
             if(nums1[left] > nums2[right]){
-                temp.add(arr[left]);
+                temp.add(nums1[left]);
                 left++;
             }
             else{
-                temp.add(arr[right]);
+                temp.add(nums2[right]);
                 right++;
             }
             while(left <= n ){
-                temp.add(arr[left]);
+                temp.add(nums1[left]);
                 left++;
             }
             while(right <= m){
-                temp.add(arr[right]);
+                temp.add(nums2[right]);
                 right++;
             }
         }
         for(int i = 0 ; i < (n + m) ; i++){
             if(i < n){
-                arr1[i] = temp.get(i);
+                nums1[i] = temp.get(i);
             }
             else{
-                arr2[i - n] = temp.get(i);
+                nums2[i - n] = temp.get(i);
             }
         }
         
