@@ -58,6 +58,7 @@ public class M_04_CheckIfLLIsPalindromeOrNOt {
         return true;
     }
     public static void print(Node head){
+        
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data + " ");
