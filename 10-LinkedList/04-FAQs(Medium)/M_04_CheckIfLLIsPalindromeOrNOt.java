@@ -34,7 +34,6 @@ public class M_04_CheckIfLLIsPalindromeOrNOt {
         if (fast != null) {
             slow = slow.next;
         }
-
         // Reverse the second half
         Node prev = null;
         while (slow != null) {
