@@ -14,47 +14,46 @@ class Node{
 
 public class M_04_CheckIfLLIsPalindromeOrNOt {
     public static void main(String[] args) {
-        int arr[] = {1,2,1};
+        int arr[] = {1,2,6,2,1};
         Node head = convertArr2LL(arr);
         System.out.println(isPalindrome(head));
 
 
     }
     public static boolean isPalindrome(Node head) {
+
         Node slow = head;
         Node fast = head;
 
-        // Find the middle
-        while (fast != null && fast.next != null) {
+        while(fast.next != null && fast.next.next != null){
             slow = slow.next;
             fast = fast.next.next;
         }
-
-        // For an odd-length list, skip the middle node
-        if (fast != null) {
-            slow = slow.next;
-        }
-        // Reverse the second half
-        Node prev = null;
-        while (slow != null) {
-            Node next = slow.next;
-            slow.next = prev;
-            prev = slow;
-            slow = next;
-        }
-
-        // Compare both halves
-        Node left = head;
-        Node right = prev;
-        while (right != null) {
-            if (left.data != right.data) {
+        Node newHead = reverse(slow.next);
+        Node first = head;
+        Node second = newHead;
+        while(second != null){
+            if(first.data != second.data) {
+                reverse(newHead);
                 return false;
             }
-            left = left.next;
-            right = right.next;
+            first = first.next;
+            second = second.next;
         }
+        reverse(newHead);
 
         return true;
+    }
+    public static Node reverse(Node head){
+        Node temp = head;
+        Node prev = null;
+        while(temp != null){
+            Node front = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = front;
+        }
+        return prev;
     }
     public static void print(Node head){
         
