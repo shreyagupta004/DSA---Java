@@ -17,6 +17,7 @@ public class M_02_FindMiddleOfLL {
         Node head = convertArr2LL(arr);
         head = findMiddle(head);
         print(head);
+        
     }//optimal approach---
     public static Node find(Node head){
         Node fast = head;
