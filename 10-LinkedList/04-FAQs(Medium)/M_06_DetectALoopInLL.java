@@ -13,6 +13,7 @@ class Node{
 }
 public class M_06_DetectALoopInLL {
     public static void main(String[] args) {
+        
         int arr[] = {1,2,3,4,5};
         Node head = convertArr2LL(arr);
         Node loopNode = head.next.next;
