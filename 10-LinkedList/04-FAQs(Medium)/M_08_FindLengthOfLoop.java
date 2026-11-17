@@ -13,6 +13,7 @@ class Node{
 }
 public class M_08_FindLengthOfLoop {
     public static void main(String[] args) {
+        
         int arr[] = {1,2,3,4,5,6,7,8,9};
         Node head = convertArr2LL(arr);
         Node loopHead = head.next.next.next;
