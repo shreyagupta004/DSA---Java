@@ -57,6 +57,7 @@ public class M_01_AddOne {
         return prev;
     }
     public static void print(Node head){
+        
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data + " ");
