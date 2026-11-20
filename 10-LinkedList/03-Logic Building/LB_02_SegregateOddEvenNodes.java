@@ -1,17 +1,4 @@
 import java.util.*;
-class Node{
-    int data;
-    Node next;
-
-    Node(int data, Node next){
-        this.data = data;
-        this.next = next;
-    }
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
 public class LB_02_SegregateOddEvenNodes{
     public static void main(String[] args) {
         int arr[] = {1,3,4,2,5,6};

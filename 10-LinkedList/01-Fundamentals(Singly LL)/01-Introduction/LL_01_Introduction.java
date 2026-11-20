@@ -8,17 +8,3 @@ public class LL_01_Introduction {
         System.out.println(node.data);
     }
 }
-class Node {
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-
-    Node(int data, Node next) {
-        this.data = data;
-        this.next = next;
-    }
-}

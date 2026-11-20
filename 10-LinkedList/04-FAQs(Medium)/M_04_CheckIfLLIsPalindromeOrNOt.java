@@ -1,17 +1,3 @@
-class Node{
-    int data;
-    Node next;
-
-    Node(int data, Node next){
-        this.data = data;
-        this.next = next;
-    }
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
-
 public class M_04_CheckIfLLIsPalindromeOrNOt {
     public static void main(String[] args) {
         int arr[] = {1,2,6,2,1};

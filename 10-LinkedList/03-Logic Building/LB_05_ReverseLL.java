@@ -1,16 +1,3 @@
-class Node{
-    int data;
-    Node next;
-
-    Node(int data, Node next){
-        this.data = data;
-        this.next = next;
-    }
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
 public class LB_05_ReverseLL {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5};

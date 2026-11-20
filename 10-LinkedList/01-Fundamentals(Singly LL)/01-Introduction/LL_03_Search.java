@@ -1,12 +1,3 @@
-class Node{
-    int data;
-    Node next;
-    
-    Node(int data, Node next){
-        this.data = data;
-        this.next = next;
-    }
-}
 public class LL_03_Search {
     public static void main(String[] args) {
         int arr[] = {1,5,2,5,7};

@@ -1,16 +1,3 @@
-class Node{
-    int data;
-    Node next;
-
-    Node(int data, Node next){
-        this.data = data;
-        this.next = next;
-    }
-    Node(int data){
-        this.data = data;
-        this.next = null;
-    }
-}
 public class LB_04_RemoveNthNodeFromBackOfLL {
     public static void main(String[] args) {
         int arr[] = {2,1,3,4,5,6};
