@@ -1,5 +1,6 @@
 public class H_04_FlatteningLL {
     public static void main(String[] args) {
+        
     Node head = new Node(1);
     head.child = new Node(4);
     head.child.child = new Node(7);
