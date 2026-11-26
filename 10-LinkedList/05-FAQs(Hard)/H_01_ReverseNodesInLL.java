@@ -27,6 +27,7 @@ public class H_01_ReverseNodesInLL {
         return head;
     }
     public static Node findKNode(Node temp, int k){
+        
         k -= 1;
         while(temp != null && k > 0){
             k--;
