@@ -11,6 +11,7 @@ public class LL_02_Traversal {
         
     }
     public static Node traversal(int arr[]){
+        
         Node head = new Node(arr[0]) ;
         Node mover = head;
         for(int i = 1; i < arr.length; i++){
